@@ -17,7 +17,7 @@ const ContactSection = () => {
     };
 
     try {
-      const response = await fetch("https://www.logicmint.solutions/api/send-mail ", {
+      const response = await fetch("https://www.logicmint.solutions/api/send-mail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
