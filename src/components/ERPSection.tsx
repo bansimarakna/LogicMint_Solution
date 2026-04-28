@@ -1,0 +1,41 @@
+import { CheckCircle } from "lucide-react";
+import ERPImg from "@/assets/ERP.jpg";
+
+const bullets = [
+  "Advanced secure login system",
+  "Role-based access control",
+  "Efficient customer management",
+  "Real-time inventory tracking",
+  "Smart order and billing management",
+];
+
+const ERPSection = () => (
+  <section id="about" className="section-padding gradient-bg">
+    <div className="container mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="glass-card p-2 rounded-2xl">
+          <img
+            src={ERPImg}
+            alt="Cybersecurity instructor"
+            className="w-full rounded-xl object-cover aspect-[4/5]"
+          />
+        </div>
+        <div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Manage Your <span className="glow-text">Business</span>
+          </h2>
+          <ul className="space-y-4">
+            {bullets.map((b) => (
+              <li key={b} className="flex items-center gap-3 text-lg text-muted-foreground">
+                <CheckCircle className="text-primary shrink-0" size={22} />
+                {b}
+              </li> 
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+export default ERPSection;
