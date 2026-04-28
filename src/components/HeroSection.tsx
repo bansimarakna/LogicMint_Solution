@@ -21,7 +21,7 @@ const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
 
       <div className="relative z-10 text-center max-w-3xl mx-auto px-2 sm:px-4">
         <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 sm:mb-6">
-          Empowering Businesses with Smart ERP & Web
+          Empowering Businesses with Smart ERP & Webb
         </h1>
 
         <p className="text-sm xs:text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
