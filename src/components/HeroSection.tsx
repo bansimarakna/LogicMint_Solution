@@ -29,12 +29,12 @@ const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-0 sm:mb-0">
-          <Link
-            to="/login"
-            className="glow-button text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
-          >
-            Contact Now
-          </Link>
+          <a
+          href="#contact"
+          className="bg-primary px-6 py-3 rounded text-black font-bold"
+        >
+          Contact Now
+        </a>
         </div>
       </div>
     </section>
