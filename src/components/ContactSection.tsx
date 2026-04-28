@@ -17,7 +17,10 @@ const ContactSection = () => {
     };
 
     try {
-      const response = await fetch("https://www.logicmint.solutions/api/send-mail", {
+      // Use relative path for API calls - works on both local and production
+      const apiUrl = "/api/send-mail";
+      
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -31,7 +34,7 @@ const ContactSection = () => {
         alert("Thank you! Your message has been sent to LogicMint Solutions.");
         e.target.reset(); // Form clear karva mate
       } else {
-        alert("Failed to send message. Please try again.");
+        alert(result.message || "Failed to send message. Please try again.");
       }
     } catch (error) {
       console.error("Error:", error);
