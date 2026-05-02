@@ -17,10 +17,7 @@ const ContactSection = () => {
     };
 
     try {
-      // Use relative path for API calls - works on both local and production
-      const apiUrl = "/api/send-mail";
-      
-      const response = await fetch(apiUrl, {
+      const response = await fetch("https://www.logicmint.solutions/api/send-mail ", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -34,7 +31,7 @@ const ContactSection = () => {
         alert("Thank you! Your message has been sent to LogicMint Solutions.");
         e.target.reset(); // Form clear karva mate
       } else {
-        alert(result.message || "Failed to send message. Please try again.");
+        alert("Failed to send message. Please try again.");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -56,34 +53,59 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 max-w-6xl mx-auto">
+        {/* <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 max-w-6xl mx-auto"> */}
           {/* --- Left Side: Info Cards --- */}
-          <div className="space-y-4 sm:space-y-6">
-            <div className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary">
-              <Mail className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
-              <div className="text-left min-w-0">
-                <p className="text-xs text-muted-foreground uppercase">Email</p>
-                <p className="font-medium text-sm sm:text-base truncate">logicmint.solution@gmail.com</p>
-              </div>
-            </div>
-            <div className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary">
-              <Phone className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
-              <div className="text-left">
-                <p className="text-xs text-muted-foreground uppercase">Phone</p>
-                <p className="font-medium text-sm sm:text-base">+91 91732 73899</p>
-              </div>
-            </div>
-            <div className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary">
-              <MapPin className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
-              <div className="text-left">
-                <p className="text-xs text-muted-foreground uppercase">Address</p>
-                <p className="font-medium text-sm sm:text-base">Rajkot, Gujarat, India</p>
-              </div>
-            </div>
-          </div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+  
+  {/* Email Card - Clickable */}
+  <a 
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=logicmint.solution@gmail.com&su=Inquiry from Website&body=Hello LogicMint Team,I am interested in your services."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary hover:bg-primary/10 transition-all cursor-pointer"
+>
+  <Mail className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
+  <div className="text-left min-w-0">
+    <p className="text-xs text-muted-foreground uppercase">Email</p>
+    <p className="font-medium text-sm sm:text-base truncate">
+      logicmint.solution@gmail.com
+    </p>
+  </div>
+</a>
+
+  {/* WhatsApp Card - Clickable */}
+  <a 
+    href="https://wa.me/919173273899?text=Hi, I am interested in your services." 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary hover:bg-primary/5 transition-all"
+  >
+    <Phone className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
+    <div className="text-left">
+      <p className="text-xs text-muted-foreground uppercase">WhatsApp</p>
+      <p className="font-medium text-sm sm:text-base">+91 91732 73899</p>
+    </div>
+  </a>
+
+  {/* Address Card */}
+  <div className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary">
+    <MapPin className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
+    <div className="text-left">
+      <p className="text-xs text-muted-foreground uppercase">Address</p>
+      <p className="font-medium text-sm sm:text-base">Rajkot, Gujarat, India</p>
+    </div>
+  </div>
+</div>
+
+{/* --- Additional Information --- */}
+<div className="text-center mt-8">
+  <p className="text-sm text-muted-foreground italic">
+    * We typically respond to all inquiries within **24 hours**.
+  </p>
+</div>
 
           {/* --- Right Side: Contact Form --- */}
-          <div className="glass-card p-4 sm:p-6 md:p-8 relative border border-primary/20">
+          {/* <div className="glass-card p-4 sm:p-6 md:p-8 relative border border-primary/20">
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6 text-left">
               <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                 <div className="space-y-2">
@@ -114,8 +136,8 @@ const ContactSection = () => {
                 <Send size={16} /> {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
     </section>
   );
