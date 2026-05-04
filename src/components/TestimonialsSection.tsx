@@ -9,12 +9,21 @@ const testimonials = [
 const TestimonialsSection = () => (
   <section className="section-padding gradient-bg">
     <div className="container mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <h2 
+        className="text-3xl md:text-4xl font-bold text-center mb-12"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         What Students <span className="glow-text">Say</span>
       </h2>
-      <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto stagger-children">
         {testimonials.map((t) => (
-          <div key={t.name} className="glass-card-hover p-6">
+          <div 
+            key={t.name} 
+            className="glass-card-hover p-6"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          >
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="text-primary fill-primary" size={16} />

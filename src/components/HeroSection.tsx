@@ -20,15 +20,29 @@ const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
       <div className="absolute top-1/3 sm:top-1/4 left-1/2 -translate-x-1/2 w-64 h-64 sm:w-96 sm:h-96 md:w-[600px] md:h-[600px] rounded-full bg-primary/10 blur-[80px] sm:blur-[100px] md:blur-[120px] animate-pulse-glow" />
 
       <div className="relative z-10 text-center max-w-3xl mx-auto px-2 sm:px-4">
-        <h1 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 sm:mb-6">
+        <h1 
+          className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 sm:mb-6"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           Empowering Businesses with Smart ERP & Webb
         </h1>
 
-        <p className="text-sm xs:text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p 
+          className="text-sm xs:text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           The all-in-one Enterprise Resource Solution that helps you manage sales, inventory, customers, and grow your business exponentially.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-0 sm:mb-0">
+        <div 
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-0 sm:mb-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
           <a
           href="#contact"
           className="bg-primary px-6 py-3 rounded text-black font-bold"

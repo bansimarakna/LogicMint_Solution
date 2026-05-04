@@ -44,7 +44,11 @@ const ContactSection = () => {
   return (
     <section id="contact" className="section-padding bg-background text-foreground">
       <div className="container mx-auto px-3 sm:px-4">
-        <div className="text-center mb-8 sm:mb-12">
+        <div 
+          className="text-center mb-8 sm:mb-12"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold mt-2">
             LET'S <span className="text-primary glow-text">CONNECT</span>
           </h2>
@@ -55,7 +59,7 @@ const ContactSection = () => {
 
         {/* <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 max-w-6xl mx-auto"> */}
           {/* --- Left Side: Info Cards --- */}
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto stagger-children">
   
   {/* Email Card - Clickable */}
   <a 
@@ -63,6 +67,8 @@ const ContactSection = () => {
   target="_blank"
   rel="noopener noreferrer"
   className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary hover:bg-primary/10 transition-all cursor-pointer"
+  data-aos="flip-left"
+  data-aos-duration="800"
 >
   <Mail className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
   <div className="text-left min-w-0">
@@ -79,6 +85,9 @@ const ContactSection = () => {
     target="_blank" 
     rel="noopener noreferrer"
     className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary hover:bg-primary/5 transition-all"
+    data-aos="flip-left"
+    data-aos-duration="800"
+    data-aos-delay="100"
   >
     <Phone className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
     <div className="text-left">
@@ -88,7 +97,12 @@ const ContactSection = () => {
   </a>
 
   {/* Address Card */}
-  <div className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary">
+  <div 
+    className="glass-card p-4 sm:p-6 flex items-center gap-3 sm:gap-4 border-l-4 border-primary"
+    data-aos="flip-left"
+    data-aos-duration="800"
+    data-aos-delay="200"
+  >
     <MapPin className="text-primary flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
     <div className="text-left">
       <p className="text-xs text-muted-foreground uppercase">Address</p>
@@ -98,7 +112,12 @@ const ContactSection = () => {
 </div>
 
 {/* --- Additional Information --- */}
-<div className="text-center mt-8">
+<div 
+  className="text-center mt-8"
+  data-aos="fade-up"
+  data-aos-duration="800"
+  data-aos-delay="300"
+>
   <p className="text-sm text-muted-foreground italic">
     * We typically respond to all inquiries within **24 hours**.
   </p>

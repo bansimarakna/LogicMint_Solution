@@ -16,12 +16,22 @@ const faqs = [
 const FAQSection = () => (
   <section id="faq" className="section-padding gradient-bg">
     <div className="container mx-auto max-w-3xl">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <h2 
+        className="text-3xl md:text-4xl font-bold text-center mb-12"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         Frequently Asked <span className="glow-text">Questions</span>
       </h2>
-      <Accordion type="single" collapsible className="space-y-3">
+      <Accordion type="single" collapsible className="space-y-3 stagger-children">
         {faqs.map((f, i) => (
-          <AccordionItem key={i} value={`faq-${i}`} className="glass-card border px-6 rounded-xl">
+          <AccordionItem 
+            key={i} 
+            value={`faq-${i}`} 
+            className="glass-card border px-6 rounded-xl"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <AccordionTrigger className="text-left font-semibold hover:no-underline">
               {f.q}
             </AccordionTrigger>

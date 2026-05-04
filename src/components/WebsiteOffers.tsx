@@ -28,14 +28,20 @@ const programs = [
 const ProgramsSection = () => (
   <section id="courses" className="section-padding gradient-bg">
     <div className="container mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <h2 
+        className="text-3xl md:text-4xl font-bold text-center mb-12"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         Website <span className="glow-text">Offers</span>
       </h2>
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 stagger-children">
         {programs.map((p) => (
           <div
             key={p.title}
             className="glass-card-hover p-8 flex flex-col"
+            data-aos="zoom-in-up"
+            data-aos-duration="800"
           >
             <h3 className="text-xl font-bold mb-4 glow-text">{p.title}</h3>
             <ul className="space-y-2 text-muted-foreground">

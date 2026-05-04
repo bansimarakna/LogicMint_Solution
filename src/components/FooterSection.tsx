@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <footer className="border-t border-border/50 py-12 px-4">
       <div className="container mx-auto grid md:grid-cols-4 gap-8">
-        <div>
+        <div data-aos="fade-up" data-aos-duration="800">
           <span className="text-lg font-bold glow-text">LogicMint Solution</span>
           <p className="text-sm text-muted-foreground mt-2">
            We build modern websites and powerful ERP solutions to grow your business.
           </p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
           <h4 className="font-semibold mb-3 text-sm">Quick Links</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><a href="#about" className="hover:text-primary transition-colors">About</a></li>
@@ -28,7 +28,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
           <h4 className="font-semibold mb-3 text-sm">Services</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>Website Development</li>
@@ -37,7 +37,12 @@ const Footer = () => {
         </div>
       
       </div>
-      <div className="container mx-auto mt-8 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
+      <div 
+        className="container mx-auto mt-8 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="300"
+      >
         © 2026 LogicMint Solution. All rights reserved.
       </div>
     </footer>
