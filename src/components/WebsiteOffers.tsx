@@ -33,7 +33,7 @@ const ProgramsSection = () => (
         data-aos="fade-down"
         data-aos-duration="1000"
       >
-        Website <span className="glow-text">Offers</span>
+        Professional Business <span className="glow-text">Website Development Services</span>
       </h2>
       <div className="grid md:grid-cols-3 gap-6 stagger-children">
         {programs.map((p) => (

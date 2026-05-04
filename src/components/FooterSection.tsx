@@ -9,7 +9,7 @@ const Footer = () => {
         <div data-aos="fade-up" data-aos-duration="800">
           <span className="text-lg font-bold glow-text">LogicMint Solution</span>
           <p className="text-sm text-muted-foreground mt-2">
-           We build modern websites and powerful ERP solutions to grow your business.
+           We build custom ERP software and business websites for companies in Rajkot, Gujarat & across India.
           </p>
         </div>
         <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">

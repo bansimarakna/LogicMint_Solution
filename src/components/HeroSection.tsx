@@ -25,16 +25,14 @@ const HeroSection = ({ onOpenModal }: HeroSectionProps) => {
           data-aos="fade-down"
           data-aos-duration="1000"
         >
-          Empowering Businesses with Smart ERP & Webb
-        </h1>
+          Custom ERP Software & Website Development</h1>
 
         <p 
           className="text-sm xs:text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
-        >
-          The all-in-one Enterprise Resource Solution that helps you manage sales, inventory, customers, and grow your business exponentially.
+        >We provide ERP solutions for inventory, sales, and business management for industries and small businesses.”
         </p>
 
         <div 

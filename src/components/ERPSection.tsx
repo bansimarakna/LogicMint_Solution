@@ -30,7 +30,7 @@ const ERPSection = () => (
             data-aos="fade-up"
             data-aos-duration="800"
           >
-            Manage Your <span className="glow-text">Business</span>
+            ERP Software Features for <span className="glow-text">Business Management</span>
           </h2>
           <ul className="space-y-4 stagger-children">
             {bullets.map((b) => (

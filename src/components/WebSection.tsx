@@ -20,7 +20,7 @@ const WebSection = () => (
             data-aos="fade-up"
             data-aos-duration="800"
           >
-            Manage Your <span className="glow-text">Website</span>
+            Website Development Services <span className="glow-text">for Businesses</span>
           </h2>
           <ul className="space-y-4 stagger-children">
             {bullets.map((b) => (
